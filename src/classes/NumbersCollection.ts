@@ -1,4 +1,5 @@
-export class NumbersCollection {
+import { Sortable } from '../interfaces/Sortable';
+export class NumbersCollection implements Sortable {
   constructor(public data: number[]) {}
 
   // `get` prefix treats this function as a property, i.e., this.length
