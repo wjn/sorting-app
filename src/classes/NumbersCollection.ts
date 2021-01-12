@@ -1,6 +1,8 @@
-import { Sortable } from '../interfaces/Sortable';
-export class NumbersCollection implements Sortable {
-  constructor(public data: number[]) {}
+import { Sorter } from './Sorter';
+export class NumbersCollection extends Sorter {
+  constructor(public data: number[]) {
+    super();
+  }
 
   // `get` prefix treats this function as a property, i.e., this.length
   get length(): number {
